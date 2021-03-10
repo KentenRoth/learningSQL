@@ -48,4 +48,4 @@ If you have a table that you cannot remember what the columns are you can check 
 
 When you are wanting to drop a table:
 
-`DROP TABLES <table_name>`
+`DROP TABLES <table_name>;`
