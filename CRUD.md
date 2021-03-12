@@ -1,4 +1,4 @@
-#CRUD Operations in MySQL
+# CRUD Operations in MySQL
 
 CRUD stands for 'Create', 'Read', 'Update', and 'Delete'.
 
