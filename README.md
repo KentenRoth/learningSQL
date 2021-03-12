@@ -1,6 +1,6 @@
 # learningSQL
 
-Currently I am learning SQL and I am going to use this README for notes and keep track of the things I have been learning.
+Currently I am learning MySQL and I am going to use this README for notes and keep track of the things I have been learning.
 
 I have spent around 15 hours learning already.  I will be transfering my hand written notes here over the next couple days, also while learning some markdown in the process!
 
@@ -38,6 +38,14 @@ ALTER TABLE <table_name>
 ADD COLUMN <column_name> <data_type>;
 ```
 
+When you want to ad an ID to the table that will auto increment:
+```
+CREATE TABLE <table_name>
+  ( <column_name> INT NOT NULL,
+    PRIMARY KEY (<column_name>)
+  );
+ ```
+
 When you need to see all tables are in your currently selected database:
 
 `SHOW TABLES;`
@@ -49,3 +57,26 @@ If you have a table that you cannot remember what the columns are you can check 
 When you are wanting to drop a table:
 
 `DROP TABLES <table_name>;`
+
+
+Here is an example of creating and adding things to a database.  
+
+`CREATE DATABASE pets;`
+
+`USE pets;`
+
+```
+CREATE TABLE indoor_pets
+  (pet_id INT NOT NULL,
+   type VARCHAR(50) NOT NULL,
+   name VARCHAR(50) DEFAULT 'No Name Yet',
+   age INT NOT NULL DEFAULT 1,
+   PRIMARY KEY (pet_id)
+   );
+ ```
+ 
+ `SHOW TABLES;`
+ 
+ `DESC indoor_pets;`
+ 
+ Code above will create a database, you move into that database, you create a table that will have 4 columns, show the table 'indoor_pets' and then show the breakdown of the 4 columns inside the table.
