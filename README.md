@@ -68,7 +68,7 @@ Here is an example of creating and adding things to a database.
 
 ```
 CREATE TABLE indoor_pets
-  (pet_id INT NOT NULL,
+  (pet_id INT NOT NULL AUTO_INCREMENT,
    type VARCHAR(50) NOT NULL,
    name VARCHAR(50) DEFAULT 'No Name Yet',
    age INT NOT NULL DEFAULT 1,
