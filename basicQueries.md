@@ -6,7 +6,7 @@ With Distinct it will return everything on the list without duplicates. So if yo
 
 `SELECT DISTINCT <column_name> FROM <table_name>;`
 
-Order by can be a very useful way of getting infromation back. This will order things in alphabetical order or numerical order. More than one column can be used to order the data. It will order by the first column_name passed then it will move to the 2nd column name passed to make fine adjustments. For expample if you have a list of books and authors. You sort by author last name then sort by author first name. This will have all of the authors in order by last name THEN it will adjust the first names. So your final results will be ordered by last name, then any author with matching last names will then be alphabtized by first name.
+Order by can be a very useful way of getting infromation back. This will order things in alphabetical order or numerical order. More than one column can be used to order the data. It will order by the first column_name passed then it will move to the 2nd column name passed to make fine adjustments. For expample if you have a list of books and authors. You sort by author last name then sort by author first name. This will have all of the authors in order by last name THEN it will adjust the first names. So your final results will be ordered by last name, then any author with matching last names will then be alphabtized by first name. ORDER BY always returns in ascending order, if you want descending order you need to add DESC.
 
 ```
 SELECT <column_name> FROM <table_name>
@@ -16,6 +16,11 @@ SELECT <column_name> FROM <table_name>
 ```
 SELECT <column_name> FROM <table_name>
     ORDER BY <column_name>, <column_name>;
+```
+
+```
+SELECT <column_name> FROM <table_name>
+    ORDER BY <column_name> DESC;
 ```
 
 The next thing we can do is limit our results. This is something that could come in handy with pagination, or just limiting your results so you can have a faster response time. If you only provide 1 number it will return that many. If you provide 2 numbers, the first number is saying at what index you want to start at, and the 2nd number is saying how many you want to return. This is something that is used frequently with Order by.
