@@ -32,8 +32,8 @@ If you are looking for something and you know there is a 'co' some place in it, 
 
 `SELECT <column_name> FROM <table_name> LIKE '%co%';`
 
-The % wildcard says there can be any number or charactors in either direction of what you typed.
+The % wildcard says there can be any number or characters in either direction of what you typed.
 
-The other wildcard is _ and is used for things that are very specific. The _ is 1 charactor slot. It can be any charactor or number, but is only one spot. If you was looking for something like maybe account numbers, and you know they are always 8 digits you could do something like:
+The other wildcard is _ and is used for things that are very specific. The _ is 1 character slot. It can be any character or number, but is only one spot. If you was looking for something like maybe account numbers, and you know they are always 8 digits you could do something like:
 
 `SELECT <column_name> FROM <table_name> LIKE '________';`
