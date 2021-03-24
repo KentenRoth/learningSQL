@@ -21,3 +21,25 @@ Sum is another function that can be used, and is used mostly with group by. Sum 
 Avg is to get the average of everything that you selected. This does not round to the nearest whole number, it will return a number with 4 decimal points. Even if the average is a whole number it will return something like 32.0000. Once again this is something that works best with GROUP BY.
 
 `SELECT AVG(<column_name>) FROM <table_name>;`
+
+So lets look at some of these functions used along with GROUP BY.
+Using count will tell you how many are actually in the row.
+
+```
+SELECT COUNT(<column_name>) FROM <table_name>
+        GROUP BY <column_name>;
+```
+
+Using average will return the average number of all the things in each group.
+
+```
+SELECT AVG(<column_name>) FROM <table_name>
+        GROUP BY <column_name>;
+```
+
+Using Sum will add everything together that is in each group.
+
+```
+SELECT SUM(<column_name>) FROM <table_name>
+        GROUP BY <column_name>;
+```
