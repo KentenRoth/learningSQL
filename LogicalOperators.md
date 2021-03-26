@@ -20,7 +20,7 @@ Less than and less than or equal to. This is the same as greater than except in 
 
 `SELECT <column_name> FROM <table_name> WHERE <column_name> <= <num>;`
 
-Now we need to be able to chain things together, and to do that we can do it a couple different ways. We can use AND or &&
+Now we need to be able to chain things together, and to do that we can do it a couple different ways. We can use AND or &&. When using AND (&&) both sides have to be true for something to return. You can chain more than 2 things together, and it does not always have to be logical operators.
 
 ```
 SELECT <column_name> FROM <table_name> WHERE
