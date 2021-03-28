@@ -31,3 +31,29 @@ SELECT <column_name> FROM <table_name> WHERE
 SELECT <column_name> FROM <table_name> WHERE
     <Logical Operator> && <Logical Operator>;
 ```
+
+The OR operator is similar in use to AND, but does basically the opposite. When you use OR you will get all data that comes back true from any of the logical operators. Just like AND there is 2 ways of using OR. You can spell it out like 'OR' the other option is using doube pipes like '||'.
+
+```
+SELECT <column_name> FROM <table_name> WHERE
+    <logical Operator> OR <Locigal Operator>;
+```
+
+```
+SELECT <column_name> FROM <table_name> WHERE
+    <Logical Operator> || <Logical Operator>;
+```
+
+Another logical operator is BETWEEN. Between will take 2 arguments and will return the data that falls inbetween the arguments provided. Something to note is that when using between it is inclusive for example if you have between 5 and 10 you will get 5 and 10.
+
+```
+SELECT <column_name> FROM <table_name> WHERE
+    <colum_name> BETWEEN <argument 1> AND <argument 2>;
+```
+
+NOT BETWEEN does the exact opposite as between. It will return all data outside of the arguments that you provided.
+
+```
+SELECT <column_name> FROM <table_name> WHERE
+    <column_name> NOT BETWEEN <argument 1> AND <argument 2>
+```
